@@ -11,7 +11,7 @@ class FreelancerServiceTest {
     public void testCalculate() {
         FreelancerService service = new FreelancerService();
 
-        int actual = service.calculate ( income: 10_000, expenses: 3_000, threshold: 20_000);
+        int actual = service.calculate (10_000, 3_000, 20_000);
         int expected = 3;
 
         Assertions.assertEquals(expected, actual);
